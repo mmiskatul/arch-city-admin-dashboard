@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans:
+    "Segoe UI", "Avenir Next", "Helvetica Neue", "Arial Nova", sans-serif;
+  --font-mono:
+    "SFMono-Regular", "Cascadia Code", "Fira Code", "Consolas", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--background);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+}
+
+body::selection {
+  background: rgba(239, 36, 42, 0.35);
+  color: #fff;
+}
+
+a,
+button {
+  outline-color: #ef242a;
+}

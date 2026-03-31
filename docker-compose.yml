@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  admin-dashboard:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: admin-dashboard
+    ports:
+      - "3000:80"
+    restart: unless-stopped
